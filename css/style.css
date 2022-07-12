@@ -1,3 +1,11 @@
+:root {
+   --bg-color: #eae9ea;
+   --block-color: #fff;
+   --text-color: #0b1f3b;
+   --btn-color: #263ce7;
+   --tag-color: #d1d7fa;
+}
+
 body {
    display: flex;
    justify-content: space-around;
@@ -7,22 +15,22 @@ body {
    line-height: 1.2;
    width: 100%;
    min-height: 100vh;
-   background-color: #eee;
-   color: #111;
+   background-color: var(--bg-color);
+   color: var(--text-color);
 }
 
 .container {
    position: relative;
    width: 800px;
    height: 600px;
-   background-color: #fff;
+   background-color: var(--block-color);
    border-radius: 20px;
    overflow: hidden;
 }
 
 .btn {
-   background-color: #0000ff;
-   color: #fff;
+   background-color: var(--btn-color);
+   color: var(--text-color);
    font-size: 18px;
    font-weight: 500;
    text-transform: uppercase;
@@ -69,8 +77,8 @@ body {
    text-decoration: none;
    font-size: 16px;
    font-weight: 500;
-   color: #111;
-   background-color: #add8e5;
+   color: var(--text-color);
+   background-color: var(--tag-color);
    padding: 12px 25px;
    border-radius: 20px;
 }
